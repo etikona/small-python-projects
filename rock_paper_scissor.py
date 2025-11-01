@@ -10,20 +10,23 @@
 
 import random
 
-emojis = {'r': '🥌', 's': '✂', 'p': '📄'} # Dictionary
+emojis = {'r': 'rock', 's': 'scissor', 'p': 'paper'} # Dictionary
 choices = ('r', 's', 'p')
 
-while True :
-    user_choices = input("Rock, Paper or Scissors ? (r/p/s) : ").lower()
-    if user_choices not in choices:
-        print("Invalid choice")
-        continue
+def get_user_choice():
+    while True:
+        user_choices = input("Rock, Paper or Scissors ? (r/p/s) : ").lower()
+        if user_choices  in choices:
+           return user_choices 
+        else:
+            print("Invalid Choice")
 
-    computer_choice = random.choice(choices)
-
+def display_choices (user_choices, computer_choice):
+    
     print(f'You choose', {emojis[user_choices]})     
-    print(f'You choose', {emojis[computer_choice]})     
+    print(f'You choose', {emojis[computer_choice]})  
 
+def determine_winner (user_choices, computer_choice):
     if user_choices == computer_choice :
         print("Tie.")
     elif (user_choices == 'r' and computer_choice == 's') or (user_choices == 'p' and computer_choice == 'r') or (user_choices == 's' and computer_choice == 'p')  :
@@ -31,9 +34,20 @@ while True :
     else:
         print("You Lose")
 
-    should_continue = input("You wanna continue ? (y/n) : ").lower()
-    if should_continue == 'n':
-        break
-    else:
-        continue
 
+def play_game():
+    while True :
+        user_choices = get_user_choice()
+
+        computer_choice = random.choice(choices)
+        display_choices(user_choices, computer_choice)
+        determine_winner(user_choices, computer_choice)
+    
+
+        should_continue = input("You wanna continue ? (y/n) : ").lower()
+        if should_continue == 'n':
+            break
+        else:
+            continue
+
+play_game()
