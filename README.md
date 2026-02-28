@@ -10,6 +10,7 @@ New projects will be added regularly as part of continuous learning.
 
 ## Repository Structure
 
+```
 small-python-projects/
 │
 ├── email_sender/
@@ -19,6 +20,7 @@ small-python-projects/
 ├── random_number_guess/
 │
 └── README.md
+```
 
 Each project is self-contained and can be executed independently.
 
@@ -111,6 +113,21 @@ A simple program that generates and displays a random number.
 
 - Random module
 - Basic Python syntax
+
+### 5. Random Number Guess
+
+A simple program that replace a word from declared sentence.
+
+**Features**
+
+- declared a sentence
+- take user input to that word want to change
+- take the user input replaced word
+
+**Topics Covered**
+
+- Python Basic function
+- In built replace() function
 
 ---
 
