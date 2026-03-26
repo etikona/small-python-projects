@@ -18,7 +18,8 @@ small-python-projects/
 ├── number_guessing_game/
 ├── rock_paper_scissors/
 ├── random_number_guess/
-│
+├── word_replacement/
+├── basic_calculator/
 └── README.md
 ```
 
@@ -114,7 +115,7 @@ A simple program that generates and displays a random number.
 - Random module
 - Basic Python syntax
 
-### 5. Random Number Guess
+### 6. Word Replacement
 
 A simple program that replace a word from declared sentence.
 
@@ -128,6 +129,23 @@ A simple program that replace a word from declared sentence.
 
 - Python Basic function
 - In built replace() function
+
+### 7. Basic Calculator
+
+A simple function to calculate Addition, Subtraction, Multiplication and Division.
+
+**Features**
+
+- Print options to the user
+- Ask for values
+- Call the functions
+
+**Topics Covered**
+
+- Python Basic function
+- Continues While Loop
+- In built quit() function
+- Concatenation
 
 ---
 
