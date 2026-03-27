@@ -20,6 +20,7 @@ small-python-projects/
 ├── random_number_guess/
 ├── word_replacement/
 ├── basic_calculator/
+├── email_slicer/
 └── README.md
 ```
 
@@ -146,6 +147,21 @@ A simple function to calculate Addition, Subtraction, Multiplication and Divisio
 - Continues While Loop
 - In built quit() function
 - Concatenation
+
+### 7. Email Slicer
+
+A simple program to slice the email with @ and .
+
+**Features**
+
+- Take user email address
+- Slice the user name based on @
+- Slice the domain based on . extension
+
+**Topics Covered**
+
+- Python Basic function
+- In built split() function
 
 ---
 
